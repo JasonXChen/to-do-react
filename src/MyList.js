@@ -8,9 +8,9 @@ class MyList extends Component {
       return (<ListItem task={item} key={index} />);
     })
     return (
-      <div class="mt-3 text-center">
-        <h1 class="text-3xl font-bold">Things I should stop procrastinating:</h1>
-        <ul >
+      <div class="flex flex-col items-center mt-3">
+        <h1 class="text-3xl text-center font-bold w-4/12">Things I should stop procrastinating:</h1>
+        <ul class="list-disc mt-1 w-fit">
           {todoItems}
         </ul>
       </div>
